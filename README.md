@@ -14,5 +14,5 @@ Objetivo: A partir de varias oraciones con 3 palabras, realizar tokenización pa
 * Encontrar raíces de palabras como sustantivo.
   *  Genero
   *  Pluralidad
-  *  
+  
 Mencionar posición de palabra, tipo de palabra y características de esta.
