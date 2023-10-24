@@ -1,60 +1,15 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Se cargaron los datos\n",
-      "[[['IXTENCO, un rincón a los pies de la Malinche', ' Texto y fotografías: VICTOR BUENDÍA', ' Ixtenco cuenta con 12000 habitantes y difícilmente aparece en los mapas de Tlaxcala, sin embargo, no por eso carece de importancia, ya que es una valiosa veta de la cultura otomí', ' La población se localiza en el kilómetro 8 de la carretera Huamantla-Puebla', ' Casi todas sus casas están construidas con piedra, sus pisos y techos son de cemento y cuentan con una cocina de las llamadas \"de humo\" y un \"coscomate\" o granero para guardar maíz, ya que los nativos se dedican principalmente al cultivo de esta gramínea, además de lenteja, frijol haba y nabo', ' Los investigadores no han logrado ponerse de acuerdo en el significado de la palabra Ixtenco; entre las diferentes acepciones esrán \"delante de la ribera\", \"lugar de bandidos\", y \"atole agrio\"; este último es el más aceptable pues en las fiestas del 12 de diembre, de la Navidad y el Año Nuevo se acos- tumbra tomar aquí un atole hecho con maíz colorado y fermentado que tiene un agradable sabor', ' En las faldas de la montaña más alta del estado de Tlaxcala, el volcán la Malinche o Malintzin, bajo el manto nebuloso de la mañana se recorta el perfil de Ixtenco, pueblo otomí que ha logrado conservar su fisonomia a través de la historia', '']]]\n"
-     ]
-    }
-   ],
-   "source": [
-    "# Leer el archivo de texto\n",
-    "import numpy as np\n",
-    "\n",
-    "def load_data():\n",
-    "    data = []\n",
-    "    with open(\"Texto1.txt\", \"r\", encoding='utf-8') as datos:\n",
-    "        oraciones = []\n",
-    "        for linea in datos:\n",
-    "            oraciones.append([x for x in linea.strip().split(\".\")])\n",
-    "            \n",
-    "        # Crear matriz para guardar las oraciones\n",
-    "        data.append(oraciones)\n",
-    "        \n",
-    "    print(\"Se cargaron los datos\")\n",
-    "    return data\n",
-    "\n",
-    "data = load_data()\n",
-    "print(data)"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.11.2"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+# Leer el archivo de texto
+import numpy as np
+
+def load_data():
+    data = []
+    with open("Texto1.txt", "r", encoding='utf-8') as datos:
+        oraciones = []
+        for linea in datos:
+            oraciones.append([x for x in linea.strip().split(".")])
+            
+        # Crear matriz para guardar las oraciones
+        data.append(oraciones)
+        
+    print("Se cargaron los datos")
+    return data
