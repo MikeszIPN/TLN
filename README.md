@@ -1,8 +1,8 @@
 # Tecnologias de Lenguaje Natural
 ## Integrantes
-* Miguel Angel Sanchez Sanjuanpa
-* Navil Pineda Rugerio
-* Valeria Jahzeel Castañon Hernandez
+* Miguel Angel Sanchez Sanjuanpa - [MikeszIPN](https://github.com/MikeszIPN)
+* Navil Pineda Rugerio - [NavilPl](https://github.com/NavilP)
+* Valeria Jahzeel Castañon Hernandez - [ValeriaJahzeel](https://github.com/ValeriaJahzeel)
 
 ## Practica 1
 Objetivo: A partir de varias oraciones con 3 palabras, realizar tokenización para encontrar raíces de palabras.
