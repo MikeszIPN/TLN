@@ -13,8 +13,9 @@ for x in raw_file:
     xt = xs.replace(")", "")
     xu = xt.replace(":", "")
     xv = xu.replace(";", "")
+    xw = xv.replace("?", "")
 
-    mod_file.write(xv)
+    mod_file.write(xw)
 
 mod_file.close()
 raw_file.close()
@@ -94,8 +95,8 @@ for j in range (len(cpy2)-1):
         #print(j, j+k+1)
         
         if (cpy2[j][-1] == cpy2[j+k+1][-1]) and (cpy2[j][-2] == cpy2[j+k+1][-2]):
-            #print(CoList[j])
-            #print(CoList[j+k+1])
+            # print(CoList[j])
+            # print(CoList[j+k+1])
             if (asonantes.count(CoList[j]) == 0): #and (consonantes.count(CoList[j]) == 0):
                 asonantes.append(CoList[j])
                 
@@ -106,6 +107,36 @@ for j in range (len(cpy2)-1):
 for l in range (len(asonantes)):
     print(asonantes[l])
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+# import re
+# def multiple_string(list_, num):
+#     regex = num * "[aeiou]"
+#     tripto = []
+#     for text in list_:
+#         if re.search(regex, text, re.IGNORECASE):
+#             print(text)
+#             tripto.append(text)
+            
+#     return tripto
+            
+
+# tripto = []
+# print("TRIPTONGOS----------")
+# for line in CoList:
+#     text = line.split()
+#     tripto = multiple_string(text, 3)
+    
+# print(tripto)
+
+# dipto = []
+# print("\n\n\nDIPTONGOS----------")
+# for line in CoList:
+#     text = line.split()
+#     dipto = multiple_string(text, 2)
+    
+# print(dipto)
+
 
 
 archivo.close()
