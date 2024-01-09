@@ -3,8 +3,8 @@ file_name = "prueba.txt"
 file_name_mod = file_name.replace(".txt", "") # Elim
 file_name_mod = file_name_mod + "m.txt" # Nombre del
 
-mod_file = open("TLN/Final/" + file_name_mod, 'w') # Creo el acrchi
-raw_file = open("TLN/Final/" + file_name, 'r') # Abro el archivo pa
+mod_file = open("./Final/" + file_name_mod, 'w') # Creo el acrchi
+raw_file = open("./Final/" + file_name, 'r') # Abro el archivo pa
 
 for x in raw_file: 
     xf = x.replace(".", "")
@@ -24,7 +24,7 @@ raw_file.close()
 
 
 # Contar lineas sin espacios y guardarlas--------
-archivo = open("TLN/Final/pruebam.txt", encoding='utf-8')
+archivo = open("./Final/pruebam.txt", encoding='utf-8')
 
 Content = archivo.read()
 CoList = Content.split("\n")
@@ -137,6 +137,9 @@ for l in range (len(asonantes)):
     
 # print(dipto)
 
-
+for line in CoList:
+    text = line.split()
+    
+print(text)
 
 archivo.close()
