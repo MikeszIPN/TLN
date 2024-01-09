@@ -70,8 +70,8 @@ file_name = "prueba.txt"
 file_name_mod = file_name.replace(".txt", "") # Elim
 file_name_mod = file_name_mod + "m.txt" # Nombre del
 
-mod_file = open("./Final/" + file_name_mod, 'w', encoding='utf-8') # Creo el acrchi
-raw_file = open("./Final/" + file_name, 'r', encoding='utf-8') # Abro el archivo pa
+mod_file = open("TLN/Final/" + file_name_mod, 'w', encoding='utf-8') # Creo el acrchi
+raw_file = open("TLN/Final/" + file_name, 'r', encoding='utf-8') # Abro el archivo pa
 
 for x in raw_file:  # normalizacion del texto
     xf = x.replace(".", "")
@@ -95,13 +95,15 @@ raw_file.close()
 
 
 # Contar lineas sin espacios y guardarlas--------
-archivo = open("./Final/pruebam.txt", encoding='utf-8')
+archivo = open("TLN/Final/pruebam.txt", encoding='utf-8')
 
 Content = archivo.read()
 CoList = Content.split("\n")
 
 for i in range (CoList.count('')):
     CoList.remove('')
+    
+print("\n\nNumero total de versos del poema: ",len(CoList), "\n\n")
 
 resultado = []
 palabras = []
@@ -152,7 +154,7 @@ print("\nEl poema tiene: ", suma , " silabas")
 # Muestra las lineas con rimas consonantes$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 consonantes = []
 
-print("++++++++++++++++++++++++++++++++ Rimas consonantes: +++++++++++++++++++++++++++++++++\n")
+print("\n\n++++++++++++++++++++++++++++++++ Rimas consonantes: +++++++++++++++++++++++++++++++++\n")
 
 for j in range (len(CoList)-1):
     

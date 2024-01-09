@@ -33,7 +33,7 @@ for i in range (CoList.count('')):
     CoList.remove('')
 
 #print(CoList)
-#print(len(CoList))
+# print(len(CoList))
 #------------------------------------------------
 
 
@@ -137,9 +137,9 @@ for l in range (len(asonantes)):
     
 # print(dipto)
 
-for line in CoList:
-    text = line.split()
+# for line in CoList:
+#     text = line.split()
     
-print(text)
+# print(text)
 
 archivo.close()
